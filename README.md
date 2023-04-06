@@ -1,70 +1,32 @@
-# Getting Started with Create React App
+Project :DecorHub
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Documentation for Furniture Shop Product Page React Project
 
-## Available Scripts
+Introduction:
+This React project is a furniture shop product page where users can view product details, select desired colors, view related furniture items, and add products to the cart. The project uses React functional components and hooks such as useState, useContext, and useReducer for state management. This documentation provides a guide on how to use the Furniture Shop Product Page React Project.
 
-In the project directory, you can run:
+Getting Started:
+To get started, you need to have Node.js installed on your machine. Clone the repository and install the dependencies using the command "npm install". After installing the dependencies, you can run the project using the command "npm start" to view the app in the browser.
 
-### `npm start`
+Components:
+The Furniture Shop Product Page React Project consists of the following components:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Product Detail Component: This component displays the product details such as name, price, description, and color options. The user can select a desired color and add the product to the cart by clicking the "Add to Cart" button. The component uses the useContext hook to update the cart value each time an item is added to the cart. The user can also view the related furniture items at the bottom of the page.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Image Gallery Component: This component displays the product images in a carousel format. The user can click on the thumbnail images to view the corresponding image in the carousel.
 
-### `npm test`
+Related Products Component: This component displays the related furniture items at the bottom of the product detail page. Each related product item displays an image, title, and price. The user can click on a related product item to view the product details.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Cart Component: This component displays the items that have been added to the cart. The user can remove an item from the cart and click the "Buy Now" button to go to the cart page to complete the purchase.
 
-### `npm run build`
+State Management:
+The Furniture Shop Product Page React Project uses the useState, useContext, and useReducer hooks for state management.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+useState Hook: This hook is used to manage the state of the selected product color.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+useContext Hook: This hook is used to share the cart state across different components. The cart value is updated each time an item is added to the cart.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+useReducer Hook: This hook is used to manage the state of the cart items. The cart items are added and removed from the cart using this hook.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Conclusion:
+The Furniture Shop Product Page React Project provides an interactive interface for users to view product details, select desired colors, view related furniture items, and add products to the cart. The project uses React functional components and hooks for state management. The use of useContext and useReducer hooks provides efficient and organized state management.

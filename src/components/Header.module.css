@@ -1,0 +1,17 @@
+.logo {
+  width: 150px;
+}
+
+.menu-icon,
+.nav-link {
+  color: #000 !important;
+  margin: 15px;
+}
+.dropdown-menu {
+  color: #000 !important;
+}
+.cart-items {
+  text-decoration: none;
+  position: absolute;
+  top: -15px;
+}

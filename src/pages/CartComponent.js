@@ -17,7 +17,7 @@ const CartComponent = ({ id, title, color, rating, price }) => {
   return (
     <Container className={classes["checkout-img-div"]}>
       <Card>
-        <div className="d-flex">
+        <div className={classes["cart-items"]}>
           <div style={{ marginRight: "20px" }}>
             <img
               src={SofaChair}

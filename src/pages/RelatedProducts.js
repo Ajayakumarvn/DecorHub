@@ -6,6 +6,7 @@ import BookShelf from "../images/products/book-shelf.jpg";
 import DiningTable from "../images/products/dining.jpg";
 import BedFrame from "../images/products/bed-frame.webp";
 import classes from "./RelatedProducts.module.css";
+import { Col, Row } from "react-bootstrap";
 
 const RelatedProducts = () => {
   const furniture_data = [
@@ -44,18 +45,22 @@ const RelatedProducts = () => {
   return (
     <div className="mt-5">
       <h2>Related Products</h2>
-      <div className="d-flex justify-content-between mt-4">
-        {furniture_data.map((product) => (
-          <div key={product.id}>
-            <img
-              className={classes["rel-img"]}
-              src={product.image_link}
-              alt={product.name}
-            />
-            <h6>{product.title}</h6>
-            <p>{product.price}</p>
-          </div>
-        ))}
+      <div className="mt-4">
+        <Row>
+          {furniture_data.map((product) => (
+            <Col lg={2} md={4} sm={6}>
+              <div key={product.id} style={{ marginBottom: "20px" }}>
+                <img
+                  className={classes["rel-img"]}
+                  src={product.image_link}
+                  alt={product.name}
+                />
+                <h6>{product.title}</h6>
+                <p>{product.price}</p>
+              </div>
+            </Col>
+          ))}
+        </Row>
       </div>
     </div>
   );

@@ -26,7 +26,7 @@ const Cart = () => {
             {cart.map((item) => (
               <div key={item.id}>
                 <p>{item.name}</p>
-                <p>{item.price}</p>
+                {/* <p>{item.price}</p> */}
               </div>
             ))}
           </div>

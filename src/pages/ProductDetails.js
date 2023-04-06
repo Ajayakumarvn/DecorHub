@@ -67,7 +67,9 @@ const ProductDetails = ({ id, image, title, rating, desc, price, review }) => {
             </Link>
           </div>
           <div className={classes["product-review"]}>
-            <p>({review} reviews)</p>
+            <Link to="/" className={classes.review}>
+              ({review} reviews)
+            </Link>
           </div>
         </Col>
       </Row>
